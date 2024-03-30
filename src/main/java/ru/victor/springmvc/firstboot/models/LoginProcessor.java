@@ -13,7 +13,7 @@ public class LoginProcessor {
         String username=this.getUsername();//так кк у нас прайват элемент мы получаем доступ через геттеры
         String password = this.getPassword();
 
-        if ("natalie".equals(username) && "passwors".equals(password)) {
+        if ("natalie".equals(username) && "password".equals(password)) {
             return true;
         }
         else {
