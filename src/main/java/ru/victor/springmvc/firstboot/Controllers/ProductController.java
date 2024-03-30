@@ -33,8 +33,7 @@ public class ProductController {
         product.setPrice(price);
         productService.addProduct(product);
 
-        var products = productService.findAll();
-        model.addAttribute("products",products);
-        return "products.xml";
+        viewProducts(model);
+        return "products.html";
     }
 }
