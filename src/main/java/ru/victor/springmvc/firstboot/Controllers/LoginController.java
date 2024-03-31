@@ -25,8 +25,9 @@ public class LoginController {
         loginProcessor.setUsername(username);
         loginProcessor.setPassword(password);
         boolean logedIn = loginProcessor.login();
-        if (logedIn == true) {//Если этот метод вернул нам тру выполняется первая часть иф если нет то вторая
-            model.addAttribute("message", "You are now loge in.");
+        if (logedIn == true) {
+            return "redirect:/main";//Если этот метод вернул нам тру выполняется первая часть иф если нет то вторая
+//            model.addAttribute("message", "You are now loge in.");
 
         } else {
             model.addAttribute("message", "Login failed");
