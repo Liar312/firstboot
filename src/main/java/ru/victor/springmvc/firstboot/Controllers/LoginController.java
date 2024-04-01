@@ -16,6 +16,7 @@ public class LoginController {
 
     @GetMapping("/")
     public String loginGet(){
+
         return("login.html");
     }
     @PostMapping("/")
